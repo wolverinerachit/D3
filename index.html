@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="https://raw.githubusercontent.com/wolverinerachit/D3/master/liquidFillGauge.js" language="JavaScript"></script>
+     <script> var TableauInput = "55";var TableauParse = parseInt(TableauInput); </script>  
+	<style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+    </style>
+</head>
+<body>
+<svg id="fillgauge1" onclick="gauge1.update(TableauParse);"></svg>
+<script language="JavaScript">
+    var gauge1 = loadLiquidFillGauge("fillgauge1", TableauParse);
+</script>
+</body>
